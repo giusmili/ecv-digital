@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,400,600');
+body,
+header,
+h1,h2,
+article,
+p,
+section,
+h3,
+ul,
+dl,
+dt,
+dd,
+details,
+footer,
+main,hr{
+	margin:0;
+	padding:0;
+	font-weight: 200;
+	
+
+}
+body{
+	font: 16px 'Dosis',sans-serif;
+	font-size-adjust: 0.5;
+	background: #fafafa;
+}
+
+*{
+	box-sizing: border-box;
+}
+/*thème*/
+
+header{
+	background: #212121;
+
+}
+header *{
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	font-size: 2.5rem;
+}
+hr{
+	background: #ccc;
+	margin:10px 0;
+	height: 1px;
+	border:0;
+}
+section>h2{
+	text-align: center;
+	background: #212121;
+	color: #fff;
+	line-height: 40px;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+section{
+	width: 600px;
+	padding:10px;
+	margin:0 auto;
+}
+
+/* Three columns: 1 fraction, 2 fractions, 3 fractions */
+.content-box-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr; /*division de chaque élément de la grille*/
+    grid-gap: 5px;/*gouttière ou séparateur*/
+  /*   grid-template-rows: 100px;ajouter une hauteur */
+    padding:5px;
+    background: #fff;
+
+}
+.box{
+	background: #ccc;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+
+}
+.box-warning{
+	background: rgb(255,0,0);
+}
+.box-success{
+	background: rgb(0,255,0);
+}
+.box-primary{
+	background: rgb(0,0,255);
+}
+
+.box img{
+	display: block;
+	width: 100%;
+	opacity: 0.5;
+	min-height: 100%;
+}
+@media screen and (max-width: 640px){
+	section{
+		width: auto;
+
+	}
+	h1{
+		font-size: 1.5rem;	
+	}
+	section h2{
+		font-size: 4vw;	
+	}
+}

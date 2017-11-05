@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>grille flex</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Dosis:200,400,600');
+		body,
+		header,
+		h1,h2,
+		article,
+		p,
+		section,
+		h3,
+		ul,
+		dl,
+		dt,
+		dd,
+		details,
+		footer,
+		main,hr{
+			margin:0;
+			padding:0;
+			font-weight: 200;
+			
+
+		}
+
+		body{
+			font: 16px 'Dosis',sans-serif;
+			font-size-adjust: 0.5;
+			background: #fafafa;
+		}
+		h1{
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		.content-grid{
+			display: flex;
+			width: 400px;
+			margin:0 auto;
+			border: solid 1px #fff;
+			flex-wrap: wrap;/*wrap*/
+			/* flex-flow: row wrap; */
+			box-shadow: 0 0 10px #999;
+			background: #fff;
+		}
+		.box-flex{
+			flex:50% 1 1;
+			background: #ccc;
+			min-height:100%;
+			text-align: center;
+			line-height: 200px;
+			background: #fff;
+			
+		}
+		
+		.box-footer{
+			background: rgb(0,0,200);
+			color: #fff;
+			
+		}
+		.box-flex img{
+			display: block;
+			width: 100%;
+		}
+		@media screen and (min-width: 320px) and (max-width: 640px){
+			.content-grid{
+				width: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Grille display flex</h1>
+	<div class="content-grid">
+		<div class="box-flex">
+			<img src="image/00.jpg" alt="">
+		</div>
+		<div class="box-flex">
+			<img src="image/01.jpg" alt="">
+		</div>
+		<div class="box-flex">
+			<img src="image/02.jpg" alt="">
+		</div>
+		<div class="box-flex">
+			<img src="image/00.jpg" alt="">
+		</div>
+			<div class="box-flex box-footer">
+			&gt;_ Ajoueter du contenu...
+		</div>
+
+	</div>
+</body>
+</html>

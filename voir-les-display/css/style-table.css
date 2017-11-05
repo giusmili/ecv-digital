@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,400,600');
+body,
+header,
+h1,h2,
+article,
+p,
+section,
+h3,
+ul,
+dl,
+dt,
+dd,
+details,
+footer,
+main,hr{
+	margin:0;
+	padding:0;
+	font-weight: 200;
+	
+
+}
+body{
+	font: 16px 'Dosis',sans-serif;
+	font-size-adjust: 0.5;
+	background: #fafafa;
+}
+
+*{
+	box-sizing: border-box;
+}
+/*thème*/
+
+header{
+	background: #212121;
+
+}
+header *{
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	font-size: 2.5rem;
+}
+hr{
+	background: #ccc;
+	margin:10px 0;
+	height: 1px;
+	border:0;
+}
+section>h2{
+	text-align: center;
+	background: #212121;
+	color: #fff;
+	line-height: 40px;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+section{
+	width: 600px;
+	padding:10px;
+	margin:0 auto;
+}
+.content-box{
+	width: auto;
+	text-align: center;
+	border: solid 1px #222;
+	background: #fff;
+	display: table;
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+.box-table{
+	width: calc(575px / 3);/*espacement 4=5.8px*/
+	display: table-cell;
+	text-align: center;
+	color: #fff;
+	font-size: 3rem;
+
+
+}
+.table-row{
+	display: table-row;
+}
+.box-table img{
+	display: block;
+	max-width: 100%;
+	opacity:0.7;
+}
+.box-table:nth-child(2){
+	
+	background: rgb(0,255,0);
+}
+.box-table:nth-child(3){
+
+	background: rgb(0,0,255);
+}
+.box-table:nth-child(1){
+
+	background: rgb(255,0,0);
+}
+

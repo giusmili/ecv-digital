@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,400,600');
+body,
+header,
+h1,h2,
+article,
+p,
+section,
+h3,
+ul,
+dl,
+dt,
+dd,
+details,
+footer,
+main,hr{
+	margin:0;
+	padding:0;
+	font-weight: 200;
+	
+
+}
+body{
+	font: 16px 'Dosis',sans-serif;
+	font-size-adjust: 0.5;
+	background: #fafafa;
+}
+
+*{
+	box-sizing: border-box;
+}
+/*thème*/
+
+header{
+	background: #212121;
+
+}
+header *{
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	font-size: 2.5rem;
+}
+hr{
+	background: #ccc;
+	margin:10px 0;
+	height: 1px;
+	border:0;
+}
+section>h2{
+	text-align: center;
+	background: #212121;
+	color: #fff;
+	line-height: 40px;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+section{
+	width: 600px;
+	padding:10px;
+	margin:0 auto;
+}
+.content-box{
+	width: auto;
+	text-align: center;
+	overflow: hidden;
+	padding: 5px 0 0 5px;
+	border: solid 1px #222;
+	background: #fff;
+
+
+	
+}
+.box-block{
+	width: calc(575px / 3 - 1.00869565217%);/* espacement 3=5.8px : opération 5.8px*100/575   */
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-size: 3rem;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+
+}
+.box-block img{
+	display: block;
+	max-width: 100%;
+	opacity:0.7;
+}
+.box-block:nth-child(2){
+	
+	background: rgb(0,255,0);
+}
+.box-block:nth-child(3){
+
+	background: rgb(0,0,255);
+}
+.box-block:nth-child(1){
+
+	background: rgb(255,0,0);
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+	section{
+		width: auto;
+	}
+	.box-block{
+		float: none;
+		width: auto;
+	}
+	.box-block img{
+		width: 100%;
+	}
+	h1{
+		font-size: 1.5rem;
+	} 
+	section h2{
+		font-size: 4.5vw;
+	}
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	section{
+		width: auto;
+		text-align: center;
+	}
+	.box-block{
+		width: calc(600 / 3);
+		display: inline-block;
+		float: none;
+		margin-bottom:0;
+	}
+	.box-block:nth-of-type(2){
+		margin:0 50px;
+	}
+	.box-block img{
+		width: 100%;
+	}
+	h1{
+		font-size: 2rem;
+	} 
+	section h2{
+		font-size: 1.5rem;
+	}
+
+}
+
